@@ -1,0 +1,27 @@
+apiVersion: v1
+entries:
+  mastodon:
+  - apiVersion: v2
+    appVersion: v4.3.4
+    created: "2025-03-07T02:43:12.729950083Z"
+    dependencies:
+    - condition: elasticsearch.enabled
+      name: elasticsearch
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 19.19.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 14.2.3
+    - condition: redis.enabled
+      name: redis
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 18.16.1
+    description: Mastodon is a free, open-source social network server based on ActivityPub.
+    digest: 0b591918fc0048747aa2da2fefa2b2a97220333a4b6ff595a647e6c8e699746c
+    name: mastodon
+    type: application
+    urls:
+    - https://github.com/productionwentdown/helm-charts/releases/download/mastodon-6.0.1/mastodon-6.0.1.tgz
+    version: 6.0.1
+generated: "2025-03-07T02:43:12.730009434Z"
